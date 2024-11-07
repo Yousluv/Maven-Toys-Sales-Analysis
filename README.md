@@ -1,6 +1,5 @@
 # Maven-Toys-Sales-Analysis
-
-![](Landing_page.Png)
+![](Landing_page.png)
 
 ## Introduction:
 In this project, I will be assuming the role of a BI consultant who has just been hired by this fictional company “Maven Toys”. As they look to expand their business with new stores, they’ve brought me in to analyze interesting patterns and trends in their data and help them make informed decisions.
@@ -45,7 +44,131 @@ The Dataset provided was in a CSV Format embedded in a zip file. The data was fi
 ### Data profiling and cleaning
 Data profiling is crucial as it provides a comprehensive understanding of the quality, structure, and relationships within a dataset, ensuring that potential issues are identified early on. Cleaning the data is equally vital to enhance accuracy, eliminate inconsistencies, 
 ## Data Model:
+![](Data_Model_Maven_Toys.png)
+
 Data modeling is essential in Power BI analysis, as it transforms raw data into a structured framework, establishing relationships and hierarchies that are key to meaningful visualizations. Related tables were connected to creating an optimized star schema model that serves as the foundation for insightful analysis.
+The data model is a star schema. The cardinality is one - many as shown in the model.
+
+
+## Analysis and Visualization.
+### EXPLORATORY ANALYSIS
+- Total Revenue: $14.44M
+- Total Unit Sold: 1.09M
+- Total Profit: $4.01M
+- Total Profit Margin: 27.79%
+- Total Stock: 30K
+## DAX.
+### Base Measures
+- `Profit = SUM(Sales[Profit])`
+- `Revenue = SUM(Sales[Total Price])`
+- `Units Sold = SUM(Sales[Units])`
+- `Profit Margin = DIVIDE([Profit],[Revenue])`
+
+### Variance Measures
+- `Profit YOY% = DIVIDE(([Profit]-[Profit LY]),[Profit LY])`
+- `Revenue YOY% = DIVIDE(([Revenue]-[Revenue LY]),[Revenue LY])`
+- `Units Sold YOY% = DIVIDE(([Units Sold]-[Units Sold LY]),[Units Sold LY])`
+- `Revenue LY = CALCULATE([Revenue],SAMEPERIODLASTYEAR('Calendar'[Date]))`
+- `Profit LY = CALCULATE([Profit],SAMEPERIODLASTYEAR('Calendar'[Date]))`
+- `Units Sold LY = CALCULATE([Units Sold],SAMEPERIODLASTYEAR('Calendar'[Date]))`
+- `Profit Margin = DIVIDE([Profit],[Revenue])`
+- `Profit Margin LY = CALCULATE([Profit Margin],SAMEPERIODLASTYEAR('Calendar'[Date]))`
+- `Profit Margin YOY% = DIVIDE(([Profit Margin]-[Profit Margin LY]),[Profit Margin LY]`
+- `Store Age:DATEDIFF`
+
+### KEY QUESTION 
+**1. Top 5 Profitable Stores**
+![](Profitable_stores.png)
+
+- The top profitable Stores are:
+•	Ciudad De Mexico 3 : $94K
+•	Puebla 3: $79
+•	Hermosillo 1: $77
+•	Monterrey 1: $74
+•	Guadalajara: $69K
+
+
+**2. Top Profit table Products**
+![](Profitable_ProductCategory.png)
+
+Top Profitable Product Categories Are;
+•	Toys: $112K
+•	Electronics: $94K
+•	Arts & crafts: $80K
+
+•	To propagate my analysis I created several measures and new columns to aid the process.
+1.	What is our Year-over-year (YOY) revenue and profit growth
+A YOY comparison is an effective way to evaluate the financial performance of Maven Toys by comparing the revenue and profit for the same period in the current year with the same period in the previous year. The time  period here is 2017 to 2018.
+
+**3. Season Trends:**
+![](Monthly_trend.png)
+
+There are clear seasonal and monthly trends in Maven Toys' revenue:
+Seasonal Trend Summary:
+Insights
+1.	Winter Dominance: Winter generates the highest revenue, driven by holiday shopping and festive gifts.
+2.	Spring Demand: Spring follows closely, indicating strong demand likely due to seasonal breaks and warmer weather.
+3.	Fall Stability: Fall brings in stable revenue, suggesting steady demand possibly linked to back-to-school or pre-holiday purchases.
+4.	Summer Dip: Summer has the lowest revenue, indicating a potential slowdown in toy purchases during this summer vacation. 
+Maven Toys experiences peak sales in winter and spring, driven by holiday shopping and seasonal breaks, respectively. Fall brings stable revenue linked to back-to-school and early holiday purchases, while summer shows the lowest sales, suggesting reduced demand. These insights indicate a need for increased inventory and targeted marketing in winter and spring, steady campaigns in fall, and creative promotions in summer to balance sales and optimize resources year-round.
+Maven Toys’ revenue peaks in December driven by holiday shopping, with additional high sales in April and May, likely from spring-related purchases. Sales are steady from January to March and increase in fall (September–November) due to back-to-school and early holiday shopping. The summer months (June–August) see the lowest revenue, indicating a seasonal slowdown that may benefit from targeted promotions. 
+
+### Recommendations
+1.	Increase Inventory in Winter and Spring: Plan for high stock levels to capture peak demand, especially around the holidays in winter and seasonal breaks in spring.
+2.	Launch Targeted Promotions: In winter, emphasize holiday gift sets, while in spring, highlight outdoor toys and seasonal products. Use discounts or bundles in fall to encourage pre-holiday purchasing.
+3.	Boost Summer Demand: Implement promotions, summer-exclusive products, or events to draw customers and encourage purchases during the low season.
+4.	Optimize Fall Campaigns: Focus on back-to-school promotions and early holiday preparations to ensure steady sales in the lead-up to winter.
+This approach maximizes sales during peak seasons, maintains stability in fall, and addresses lower revenue in summer to support year-round growth.
+##Visuals
+There are 5 Pages.
+###Reve
+![](Revenue_page.png)
+---
+![](product_performance.png)
+---
+![](Landing_page.png)
+---
+![](location_expansion.png)
+---
+
+
+
+### Expansion plan.
+Proposed Expansion Strategy:
+Based on these findings, the expansion strategy could focus on:
+•	High-Margin, Low-Presence Areas: Expand in airports and residential areas to capture high-margin sales with minimal competition.
+•	Sustained Growth in Commercial Zones: Add a limited number of stores in select commercial areas to balance growth without oversaturating.
+•	Controlled Growth in Downtown: Limit further expansion downtown, focusing only on new stores if data indicates high unmet demand.
+
+**Insights**
+1.	Airport Locations
+o	Profit Margin: 29.31% (highest among all locations)
+o	Current Presence: 3 stores with an average age of 12 years (youngest)
+o	Insight: Airport stores are highly profitable and relatively new, indicating strong performance and room for expansion in other high-traffic terminals.
+2.	Commercial Areas
+o	Profit Margin: 28%
+o	Current Presence: 12 stores with an average age of 14 years
+o	Insight: Commercial zones show solid profitability and a moderate store presence. Their age suggests consistent demand, making these locations promising for additional stores in busy shopping districts.
+3.	Residential Areas
+o	Profit Margin: 27.8%
+o	Current Presence: 6 stores with the oldest average age of 17 years
+o	Insight: Residential stores have sustained demand over time. The low number of stores, despite strong profit margins, suggests opportunities to expand into family-friendly neighborhoods.
+4.	Downtown Areas
+o	Profit Margin: 27%
+o	Current Presence: 29 stores with an average age of 15 years
+o	Insight: Downtown locations are well-established with the largest store count and slightly lower margins, indicating potential market saturation. Future focus should be on improving operations rather than further expansion.
+
+### Expansion Plan
+1.	Airport: Expand by adding 3 new stores in other high-traffic airport locations to capitalize on the highest profit margins and low saturation.
+2.	Commercial: Add 6 stores in strategic, high-traffic shopping areas within commercial zones to capture increased demand and strengthen presence in profitable areas.
+3.	Residential: Add 4 stores in family-oriented neighborhoods to serve established demand and support recurring local purchases.
+4.	Downtown: Refrain from adding new stores due to market saturation. Focus on enhancing operational efficiency and customer experience in existing locations.
+This expansion plan prioritizes profitable, less saturated areas while optimizing resources in mature markets.
+This expansion strategy prioritizes high-profit, low-competition areas while managing market saturation in existing locations.
+
+
+
+
 
 
 
