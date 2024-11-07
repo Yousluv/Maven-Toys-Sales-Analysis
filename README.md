@@ -1,6 +1,6 @@
 # Maven-Toys-Sales-Analysis
 
-![](Data_Model_Maven_Toys.Png)
+![](Landing_page.Png)
 
 ## Introduction:
 In this project, I will be assuming the role of a BI consultant who has just been hired by this fictional company “Maven Toys”. As they look to expand their business with new stores, they’ve brought me in to analyze interesting patterns and trends in their data and help them make informed decisions.
