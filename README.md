@@ -101,7 +101,7 @@ Top Profitable Product Categories Are;
 A YOY comparison is an effective way to evaluate the financial performance of Maven Toys by comparing the revenue and profit for the same period in the current year with the same period in the previous year. The time  period here is 2017 to 2018.
 
 **3. Seasonal and monthly Trends:**
-![](Monthly_trend.png)
+![](Trends.png)
 
 There are clear seasonal and monthly trends in Maven Toys' revenue:
 ### Seasonal Trend Summary:
