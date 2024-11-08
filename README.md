@@ -98,11 +98,15 @@ Top Profitable Product Categories Are;
 3. Arts & crafts: $80K
 
 1.	What is our Year-over-year (YOY) revenue and profit growth
-A YOY comparison is an effective way to evaluate the financial performance of Maven Toys by comparing the revenue and profit for the same period in the current year with the same period in the previous year. The time  period here is 2017 to 2018.
+
+![](YOY.png)
+
+A YOY comparison is an effective way to evaluate the financial performance of Maven Toys by comparing the revenue and profit for the same period in the current year with the same period in the previous year. The time  period here is 2022 to 2023.
 
 **3. Seasonal and monthly Trends:**
-![](Trends.png)
 
+![](TREND.png)
+---
 There are clear seasonal and monthly trends in Maven Toys' revenue:
 ### Seasonal Trend Summary:
 Insights
@@ -129,6 +133,7 @@ There are 5 Pages; the first page is the same as the landing page above.
 ![](Revenue_page.png)
 ---
 **Store Performance**
+![](store.png)
 ---
 
 **Product Performance**
