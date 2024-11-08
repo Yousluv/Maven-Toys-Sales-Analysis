@@ -58,6 +58,7 @@ The data model is a star schema. The cardinality is one - many as shown in the m
 - Total Profit Margin: 27.79%
 - Total Stock: 30K
 ## DAX.
+- To propagate my analysis I created several measures and new columns to aid the process.
 ### Base Measures
 - `Profit = SUM(Sales[Profit])`
 - `Revenue = SUM(Sales[Total Price])`
@@ -92,25 +93,26 @@ The data model is a star schema. The cardinality is one - many as shown in the m
 ![](Profitable_ProductCategory.png)
 
 Top Profitable Product Categories Are;
-•	Toys: $112K
-•	Electronics: $94K
-•	Arts & crafts: $80K
+1. Toys: $112K
+2. Electronics: $94K
+3. Arts & crafts: $80K
 
-•	To propagate my analysis I created several measures and new columns to aid the process.
 1.	What is our Year-over-year (YOY) revenue and profit growth
 A YOY comparison is an effective way to evaluate the financial performance of Maven Toys by comparing the revenue and profit for the same period in the current year with the same period in the previous year. The time  period here is 2017 to 2018.
 
-**3. Season Trends:**
+**3. Seasonal and monthly Trends:**
 ![](Monthly_trend.png)
 
 There are clear seasonal and monthly trends in Maven Toys' revenue:
-Seasonal Trend Summary:
+### Seasonal Trend Summary:
 Insights
 1.	Winter Dominance: Winter generates the highest revenue, driven by holiday shopping and festive gifts.
 2.	Spring Demand: Spring follows closely, indicating strong demand likely due to seasonal breaks and warmer weather.
 3.	Fall Stability: Fall brings in stable revenue, suggesting steady demand possibly linked to back-to-school or pre-holiday purchases.
-4.	Summer Dip: Summer has the lowest revenue, indicating a potential slowdown in toy purchases during this summer vacation. 
+4.	Summer Dip: Summer has the lowest revenue, indicating a potential slowdown in toy purchases during this summer vacation.
+
 Maven Toys experiences peak sales in winter and spring, driven by holiday shopping and seasonal breaks, respectively. Fall brings stable revenue linked to back-to-school and early holiday purchases, while summer shows the lowest sales, suggesting reduced demand. These insights indicate a need for increased inventory and targeted marketing in winter and spring, steady campaigns in fall, and creative promotions in summer to balance sales and optimize resources year-round.
+### monthly Trend
 Maven Toys’ revenue peaks in December driven by holiday shopping, with additional high sales in April and May, likely from spring-related purchases. Sales are steady from January to March and increase in fall (September–November) due to back-to-school and early holiday shopping. The summer months (June–August) see the lowest revenue, indicating a seasonal slowdown that may benefit from targeted promotions. 
 
 ### Recommendations
@@ -119,15 +121,20 @@ Maven Toys’ revenue peaks in December driven by holiday shopping, with additio
 3.	Boost Summer Demand: Implement promotions, summer-exclusive products, or events to draw customers and encourage purchases during the low season.
 4.	Optimize Fall Campaigns: Focus on back-to-school promotions and early holiday preparations to ensure steady sales in the lead-up to winter.
 This approach maximizes sales during peak seasons, maintains stability in fall, and addresses lower revenue in summer to support year-round growth.
-##Visuals
-There are 5 Pages.
-###Reve
+
+## Visuals
+There are 5 Pages; the first page is the same as the landing page above.
+
+**Revenue Page**
 ![](Revenue_page.png)
 ---
+**Store Performance**
+---
+
+**Product Performance**
 ![](product_performance.png)
 ---
-![](Landing_page.png)
----
+**Location expansion**
 ![](location_expansion.png)
 ---
 
