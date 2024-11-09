@@ -119,7 +119,6 @@ Insights
 ### Insights Summary
 Maven Toys experiences peak sales in winter and spring, driven by holiday shopping and seasonal breaks, respectively. Fall brings stable revenue linked to back-to-school and early holiday purchases, while summer shows the lowest sales, suggesting reduced demand. These insights indicate a need for increased inventory and targeted marketing in winter and spring, steady campaigns in fall, and creative promotions in summer to balance sales and optimize resources year-round.
 
-![](Monthly_trend)
 ### monthly Trend
 Maven Toys’ revenue peaks in December driven by holiday shopping, with additional high sales in April and May, likely from spring-related purchases. Sales are steady from January to March and increase in fall (September–November) due to back-to-school and early holiday shopping. The summer months (June–August) see the lowest revenue, indicating a seasonal slowdown that may benefit from targeted promotions. 
 
