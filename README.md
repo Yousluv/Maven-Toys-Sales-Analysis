@@ -131,7 +131,8 @@ Maven Toys’ revenue peaks in December driven by holiday shopping, with additio
 This approach maximizes sales during peak seasons, maintains stability in fall, and addresses lower revenue in summer to support year-round growth.
 
 ## Visuals
-There are 5 Pages; the first page is the same as the landing page above.
+The report comprises 5 Pages; the first page is the landing page.
+You can Interract with the report [here](https://app.powerbi.com/view?r=eyJrIjoiMTdiYTI2NmMtMjNlNy00ZWMxLTg4YmItMjhlYzQ0NWI4ODM2IiwidCI6ImQ3YmIyMmY1LTZmYjgtNDA4Zi04MWU5LTRlMzE0NWJjMmI1ZiJ9)
 
 **Revenue Page**
 ![](Revenue_page.png)
