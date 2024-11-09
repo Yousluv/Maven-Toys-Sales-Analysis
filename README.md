@@ -2,8 +2,9 @@
 ![](Landing_page.png)
 
 ## Introduction:
-In this project, I will be assuming the role of a BI consultant who has just been hired by this fictional company “Maven Toys”. As they look to expand their business with new stores, they’ve brought me in to analyze interesting patterns and trends in their data and help them make informed decisions.
-Overview:
+In this project, I will be assuming the role of a BI consultant who has just been hired by this fictional company ***“Maven Toys”***. As they look to expand their business with new stores, they’ve brought me in to analyze interesting patterns and trends in their data and help them make informed decisions.
+
+## Overview:
 We have been provided with sales and inventory data with over 800,000 sales transactions from January 2022 to September 2023 for a chain of toys stores in Mexico called Maven Toys store. Maven store has been in existence since 1992 till date (over 30 years of establishment.
 
 ## Problem statement/Objective:
@@ -97,7 +98,7 @@ Top Profitable Product Categories Are;
 2. Electronics: $94K
 3. Arts & crafts: $80K
 
-1.	What is our Year-over-year (YOY) revenue and profit growth
+- .1What is our Year-over-year (YOY) revenue and profit growth
 
 ![](YOY.png)
 
@@ -108,13 +109,14 @@ A YOY comparison is an effective way to evaluate the financial performance of Ma
 ![](TREND.png)
 ---
 There are clear seasonal and monthly trends in Maven Toys' revenue:
-### Seasonal Trend Summary:
+### Seasonal Trend:
 Insights
 1.	Winter Dominance: Winter generates the highest revenue, driven by holiday shopping and festive gifts.
 2.	Spring Demand: Spring follows closely, indicating strong demand likely due to seasonal breaks and warmer weather.
 3.	Fall Stability: Fall brings in stable revenue, suggesting steady demand possibly linked to back-to-school or pre-holiday purchases.
 4.	Summer Dip: Summer has the lowest revenue, indicating a potential slowdown in toy purchases during this summer vacation.
 
+### Insights Summary
 Maven Toys experiences peak sales in winter and spring, driven by holiday shopping and seasonal breaks, respectively. Fall brings stable revenue linked to back-to-school and early holiday purchases, while summer shows the lowest sales, suggesting reduced demand. These insights indicate a need for increased inventory and targeted marketing in winter and spring, steady campaigns in fall, and creative promotions in summer to balance sales and optimize resources year-round.
 ### monthly Trend
 Maven Toys’ revenue peaks in December driven by holiday shopping, with additional high sales in April and May, likely from spring-related purchases. Sales are steady from January to March and increase in fall (September–November) due to back-to-school and early holiday shopping. The summer months (June–August) see the lowest revenue, indicating a seasonal slowdown that may benefit from targeted promotions. 
@@ -143,43 +145,48 @@ There are 5 Pages; the first page is the same as the landing page above.
 ![](location_expansion.png)
 ---
 
-
-
 ### Expansion plan.
 Proposed Expansion Strategy:
 Based on these findings, the expansion strategy could focus on:
-•	High-Margin, Low-Presence Areas: Expand in airports and residential areas to capture high-margin sales with minimal competition.
-•	Sustained Growth in Commercial Zones: Add a limited number of stores in select commercial areas to balance growth without oversaturating.
-•	Controlled Growth in Downtown: Limit further expansion downtown, focusing only on new stores if data indicates high unmet demand.
+- High-Margin, Low-Presence Areas: Expand in airports and residential areas to capture high-margin sales with minimal competition.
+-	Sustained Growth in Commercial Zones: Add a limited number of stores in select commercial areas to balance growth without oversaturating.
+-	Controlled Growth in Downtown: Limit further expansion downtown, focus on enhancing operational efficiency and customer experience in existing locations.
 
 **Insights**
 1.	Airport Locations
-o	Profit Margin: 29.31% (highest among all locations)
-o	Current Presence: 3 stores with an average age of 12 years (youngest)
-o	Insight: Airport stores are highly profitable and relatively new, indicating strong performance and room for expansion in other high-traffic terminals.
+- Profit Margin: 29.31% (highest among all locations)
+- Current Presence: 3 stores with an average age of 12 years (youngest)
+- Insight: Airport stores are highly profitable and relatively new, indicating strong performance and room for expansion in other high-traffic terminals.
 2.	Commercial Areas
-o	Profit Margin: 28%
-o	Current Presence: 12 stores with an average age of 14 years
-o	Insight: Commercial zones show solid profitability and a moderate store presence. Their age suggests consistent demand, making these locations promising for additional stores in busy shopping districts.
+-	Profit Margin: 28.3%
+-	Current Presence: 12 stores with an average age of 14 years
+-	Insight: Commercial zones show solid profitability and a moderate store presence. Their age suggests consistent demand, making these locations promising for additional stores in busy shopping districts.
 3.	Residential Areas
-o	Profit Margin: 27.8%
-o	Current Presence: 6 stores with the oldest average age of 17 years
-o	Insight: Residential stores have sustained demand over time. The low number of stores, despite strong profit margins, suggests opportunities to expand into family-friendly neighborhoods.
+-	Profit Margin: 27.8%
+-	Current Presence: 6 stores with the oldest average age of 17 years
+-	Insight: Residential stores have sustained demand over time. The low number of stores, despite strong profit margins, suggests opportunities to expand into family-friendly neighborhoods.
 4.	Downtown Areas
-o	Profit Margin: 27%
-o	Current Presence: 29 stores with an average age of 15 years
-o	Insight: Downtown locations are well-established with the largest store count and slightly lower margins, indicating potential market saturation. Future focus should be on improving operations rather than further expansion.
+-	Profit Margin: 27.4%
+-	Current Presence: 29 stores with an average age of 15 years
+-	Insight: Downtown locations are well-established with the largest store count and slightly lower margins, indicating potential market saturation. Future focus should be on improving operations rather than further expansion.
 
 ### Expansion Plan
 1.	Airport: Expand by adding 3 new stores in other high-traffic airport locations to capitalize on the highest profit margins and low saturation.
 2.	Commercial: Add 6 stores in strategic, high-traffic shopping areas within commercial zones to capture increased demand and strengthen presence in profitable areas.
-3.	Residential: Add 4 stores in family-oriented neighborhoods to serve established demand and support recurring local purchases.
+3.	Residential: Add 3 stores in family-oriented neighborhoods to serve established demand and support recurring local purchases.
 4.	Downtown: Refrain from adding new stores due to market saturation. Focus on enhancing operational efficiency and customer experience in existing locations.
 This expansion plan prioritizes profitable, less saturated areas while optimizing resources in mature markets.
 This expansion strategy prioritizes high-profit, low-competition areas while managing market saturation in existing locations.
 
+### Conclusion and Recommendations
+1.	Increase Inventory in Winter and Spring: Plan for high stock levels to capture peak demand, especially around the holidays in winter and seasonal breaks in spring.
+2.	Launch Targeted Promotions: In winter, emphasize holiday gift sets, while in spring, highlight outdoor toys and seasonal products. Use discounts or bundles in fall to encourage pre-holiday purchasing.
+3.	Boost Summer Demand: Implement promotions, summer-exclusive products, or events to draw customers and encourage purchases during the low season.
+4.	Optimize Fall Campaigns: Focus on back-to-school promotions and early holiday preparations to ensure steady sales in the lead-up to winter.
+This approach maximizes sales during peak seasons, maintains stability in fall, and addresses lower revenue in summer to support year-round growth.
 
 
+![]()
 
 
 
