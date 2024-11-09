@@ -106,7 +106,7 @@ A YOY comparison is an effective way to evaluate the financial performance of Ma
 
 **3. Seasonal and monthly Trends:**
 
-![](TREND.png)
+![](Trends.png)
 ---
 There are clear seasonal and monthly trends in Maven Toys' revenue:
 ### Seasonal Trend:
@@ -186,7 +186,8 @@ This expansion strategy prioritizes high-profit, low-competition areas while man
 This approach maximizes sales during peak seasons, maintains stability in fall, and addresses lower revenue in summer to support year-round growth.
 
 
-![]()
+![](Thanks.png)
+---
 
 
 
