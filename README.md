@@ -9,15 +9,15 @@ We have been provided with sales and inventory data with over 800,000 sales tran
 
 ## Problem statement/Objective:
 Maven Toys’ major objective is to expand their business with new stores. Based on historical data from January 2022 to September 2023, they have posed the following business questions to help them make an informed decision.
-- Your task is to build a visualization or dashboard.
 - Which product category drives the biggest profits? Is this the same across store locations?
 - What is our Year-over-year (YOY) revenue and profit growth? 
 - Can you find any seasonal trends or patterns in the sales data?
 - Expansion plan and contains supporting data from your analysis.
 - How would you advise Maven Toys to proceed with their expansion based on the insights you’ve garnered?
+- Your task is to build a visualization or dashboard.
 
 ## Skills Demonstrated:
-The following Powerbi features were Incorporated.
+The following **Powerbi** features were Incorporated.
 - DAX
 - Quick Measures
 - Measures
@@ -41,7 +41,7 @@ store on a specific date)
 - product in each store at the current point in time(September 30th,2023)
 
 ## Data Preparation:
-The Dataset provided was in a CSV Format embedded in a zip file. The data was first extracted, Transformed and cleaned thoroughly by utilizing the Data-transformation capabilities of Power Query, before loading into Powerbi. The data was examine for inconsistence, errors, null values, incorrect data type, spelling errors and maintain the integrity of the information, ensuring reliable insights and informed decision-making.
+The Dataset provided was in a CSV Format embedded in a zip file. The data was first extracted, Transformed and cleaned thoroughly by utilizing the Data-transformation capabilities of ***Power Query***, before loading into Powerbi. The data was examine for inconsistence, errors, null values, incorrect data type, spelling errors and maintain the integrity of the information, ensuring reliable insights and informed decision-making.
 ### Data profiling and cleaning
 Data profiling is crucial as it provides a comprehensive understanding of the quality, structure, and relationships within a dataset, ensuring that potential issues are identified early on. Cleaning the data is equally vital to enhance accuracy, eliminate inconsistencies, 
 ## Data Model:
@@ -76,7 +76,8 @@ The data model is a star schema. The cardinality is one - many as shown in the m
 - `Profit Margin = DIVIDE([Profit],[Revenue])`
 - `Profit Margin LY = CALCULATE([Profit Margin],SAMEPERIODLASTYEAR('Calendar'[Date]))`
 - `Profit Margin YOY% = DIVIDE(([Profit Margin]-[Profit Margin LY]),[Profit Margin LY]`
-- `Store Age:DATEDIFF`
+- `Store Age = DATEDIFF(Stores[Store_Open_Date].[Date],TODAY(),YEAR)`
+- `Region = SWITCH(TRUE(),'Calendar'[Month]>=1 && 'Calendar'[Month]<=2 || 'Calendar'[Month]=12,"winter",'Calendar'[Month]>2&&'Calendar'[Month]<=5,"Spring",'Calendar'[Month]>5&&'Calendar'[Month]<=8,"Summer",'Calendar'[Month]>8&&'Calendar'[Month]<=11,"Fall")`
 
 ### KEY QUESTION 
 **1. Top 5 Profitable Stores**
@@ -98,7 +99,7 @@ Top Profitable Product Categories Are;
 2. Electronics: $94K
 3. Arts & crafts: $80K
 
-- .1What is our Year-over-year (YOY) revenue and profit growth
+- 1.What is our Year-over-year (YOY) revenue and profit growth
 
 ![](YOY.png)
 
